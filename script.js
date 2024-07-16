@@ -28,8 +28,10 @@ hoverDivs.forEach(hoverDiv => {
       
 
 })
-    function clearDiv() {
-     hoverDivs.childNodes.forEach((child) =>
-      child.style.backgroundColor = "white"
-    )
+function clearDiv() {
+    hoverDivs.forEach((hoverDiv) => {
+      hoverDiv.style.backgroundColor = "white";
+    });
   }
+  
+  clear.addEventListener('click', clearDiv);
